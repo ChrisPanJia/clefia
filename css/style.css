@@ -1,0 +1,1063 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header and Navigation */
+header {
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo h1 {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    background: linear-gradient(45deg, #FF6B6B, #4ECDC4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #2c3e50;
+    margin-left: 2rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(45deg, #FF6B6B, #4ECDC4);
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+    width: 100%;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #FF6B6B;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background: linear-gradient(45deg, #FF6B6B, #4ECDC4);
+    margin: 2px 0;
+    transition: 0.3s;
+}
+
+/* Hero Section */
+.hero {
+    position: relative; /* 确保子元素绝对定位基于它 */
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    padding: 0 1rem;
+    overflow: hidden; /* 防止视频溢出 */
+}
+
+.hero-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4); /* 半透明遮罩 */
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2; /* 确保文字在视频和遮罩上方 */
+}
+
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: linear-gradient(45deg, #FF6B6B, #4ECDC4);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+/* Featured Courses Section */
+.featured-courses {
+    padding: 5rem 5%;
+    background-color: #f9f9f9;
+}
+
+.featured-courses h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #2c3e50;
+    font-size: 2.5rem;
+    position: relative;
+}
+
+.featured-courses h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background: linear-gradient(45deg, #FF6B6B, #4ECDC4);
+}
+
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.course-card {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.course-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.course-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.course-card:hover img {
+    transform: scale(1.05);
+}
+
+.course-card h3 {
+    padding: 1.5rem 1.5rem 0.5rem;
+    color: #2c3e50;
+    font-size: 1.5rem;
+}
+
+.course-card p {
+    padding: 0 1.5rem 1.5rem;
+    color: #666;
+}
+
+.learn-more {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    margin: 0 1.5rem 1.5rem;
+    color: #FF6B6B;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border: 2px solid #FF6B6B;
+    border-radius: 25px;
+}
+
+.learn-more:hover {
+    background: linear-gradient(45deg, #FF6B6B, #4ECDC4);
+    color: #fff;
+    border-color: transparent;
+}
+
+/* Why Choose Us Section */
+.why-choose-us {
+    padding: 5rem 5%;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.why-choose-us h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #2c3e50;
+    font-size: 2.5rem;
+    position: relative;
+}
+
+.why-choose-us h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background: linear-gradient(45deg, #FF6B6B, #4ECDC4);
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.feature {
+    text-align: center;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.feature i {
+    font-size: 2.5rem;
+    background: linear-gradient(45deg, #FF6B6B, #4ECDC4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 1rem;
+}
+
+.feature h3 {
+    margin-bottom: 1rem;
+    color: #2c3e50;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+    color: #fff;
+    padding: 3rem 5% 1rem;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section h3 {
+    margin-bottom: 1rem;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: #FF6B6B;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .course-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Animation for Mobile Menu */
+.nav-links.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.nav-links.active a {
+    margin: 0.5rem 0;
+}
+
+/* About Page Styles */
+.about-hero {
+    height: 60vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../images/about-hero.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    margin-top: 80px;
+}
+
+.about-hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.about-hero-content p {
+    font-size: 1.2rem;
+}
+
+.about-content {
+    padding: 5rem 5%;
+    background-color: #f9f9f9;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-text h2 {
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+}
+
+.about-text h3 {
+    color: #3498db;
+    margin: 2rem 0 1rem;
+}
+
+.about-text p {
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.about-stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    align-items: center;
+}
+
+.stat-item {
+    text-align: center;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.stat-item:hover {
+    transform: translateY(-5px);
+}
+
+.stat-item i {
+    font-size: 2.5rem;
+    color: #3498db;
+    margin-bottom: 1rem;
+}
+
+.stat-item h3 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.stat-item p {
+    color: #666;
+}
+
+.values-section {
+    padding: 5rem 5%;
+    background-color: #fff;
+}
+
+.values-section h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 3rem;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.value-item {
+    text-align: center;
+    padding: 2rem;
+    background: #f9f9f9;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.value-item:hover {
+    transform: translateY(-5px);
+}
+
+.value-item i {
+    font-size: 2.5rem;
+    color: #3498db;
+    margin-bottom: 1rem;
+}
+
+.value-item h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.value-item p {
+    color: #666;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .about-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .about-hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .about-hero-content p {
+        font-size: 1rem;
+    }
+
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Courses Page Styles */
+.courses-hero {
+    height: 60vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../images/courses-hero.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    margin-top: 80px;
+}
+
+.courses-hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.courses-hero-content p {
+    font-size: 1.2rem;
+}
+
+.course-categories {
+    padding: 2rem 5%;
+    background-color: #f9f9f9;
+}
+
+.teacher-categories {
+    padding: 2rem 5%;
+    background-color: #f9f9f9;
+}
+
+.category-filters {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    background-color: #fff;
+    color: #2c3e50;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background-color: #3498db;
+    color: #fff;
+}
+
+.courses-grid-section {
+    padding: 4rem 5%;
+    background-color: #fff;
+}
+
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.course-card {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    opacity: 0;
+    transform: translateY(20px);
+    display: flex;
+    flex-direction: column;  /* 竖直排列 */
+}
+
+.course-card.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+}
+
+.course-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.course-content {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;           /* 占满卡片剩余空间 */
+}
+
+.course-content h3 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.course-content p {
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.course-details {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    color: #666;
+    font-size: 0.66rem;
+     margin-top: auto;      /* 推到底部 */
+}
+
+.course-details span {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.enroll-btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    width: 130px;          /* 不要100%，保持原始宽度 */
+    margin-top: 1rem;      /* 和 details 保持间距 */
+}
+
+.enroll-btn:hover {
+    background-color: #2980b9;
+}
+
+.course-features {
+    padding: 4rem 5%;
+    background-color: #f9f9f9;
+}
+
+.course-features h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 3rem;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .courses-hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .courses-hero-content p {
+        font-size: 1rem;
+    }
+
+    .category-filters {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .filter-btn {
+        width: 100%;
+        max-width: 200px;
+    }
+
+    .courses-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .course-details {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
+
+/* Teachers Page Styles */
+.teachers-hero {
+    height: 60vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../images/teachers-hero.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    margin-top: 80px;
+}
+
+.teachers-hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.teachers-hero-content p {
+    font-size: 1.2rem;
+}
+
+.teachers-grid-section {
+    padding: 4rem 5%;
+    background-color: #f9f9f9;
+}
+
+.teachers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.teacher-card {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    opacity: 0;
+    transform: translateY(20px);
+
+    width: 380px;          /* 根据需要调整大小 */
+    min-width: 380px;      /* 防止缩小 */
+    max-width: 380px;      /* 防止放大 */
+    margin: 0 auto;        
+}
+
+.teacher-card.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.teacher-card:hover {
+    transform: translateY(-5px);
+}
+
+.teacher-image {
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+}
+
+.teacher-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.teacher-card:hover .teacher-image img {
+    transform: scale(1.05);
+}
+
+.teacher-content {
+    padding: 1.5rem;
+}
+
+.teacher-content h3 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.teacher-content .specialty {
+    color: #3498db;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.teacher-content .bio {
+    color: #666;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.teacher-social {
+    display: flex;
+    gap: 1rem;
+}
+
+.teacher-social a {
+    color: #2c3e50;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.teacher-social a:hover {
+    color: #3498db;
+}
+
+.teacher-qualities {
+    padding: 4rem 5%;
+    background-color: #fff;
+}
+
+.teacher-qualities h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 3rem;
+}
+
+.qualities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.quality-item {
+    text-align: center;
+    padding: 2rem;
+    background: #f9f9f9;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.quality-item:hover {
+    transform: translateY(-5px);
+}
+
+.quality-item i {
+    font-size: 2.5rem;
+    color: #3498db;
+    margin-bottom: 1rem;
+}
+
+.quality-item h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.quality-item p {
+    color: #666;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .teachers-hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .teachers-hero-content p {
+        font-size: 1rem;
+    }
+
+    .teachers-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .teacher-image {
+        height: 250px;
+    }
+
+    .qualities-grid {
+        grid-template-columns: 1fr;
+    }
+} 
+
+
+
+/* Nav Item 容器 */
+.nav-item {
+    position: relative;
+    display: inline-block;
+}
+
+/* 下拉按钮 */
+.nav-dropbtn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    color: #2c3e50;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+.nav-dropbtn:hover,
+.nav-dropbtn.active {
+    color: #FF6B6B;
+}
+
+/* 一级下拉菜单容器 */
+.nav-dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 130px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    z-index: 1000;
+}
+
+/* 一级下拉菜单项 */
+.nav-dropdown-content a {
+    display: block;
+    padding: 10px 15px;
+    margin: 0;
+    color: #2c3e50;
+    text-decoration: none;
+    transition: background 0.3s, color 0.3s;
+    position: relative;
+    text-align: center;
+}
+
+/* 一级下拉悬停 */
+.nav-dropdown-content a:hover {
+    background: linear-gradient(45deg, #FF6B6B, #4ECDC4);
+    color: #fff;
+}
+
+/* Subitem 标题样式（Private / Group） */
+.nav-subtitle {
+    display: block;
+    padding: 10px 15px;
+    color: #2c3e50;
+    font-weight: 600;
+    cursor: default;
+    text-align: center;
+    position: relative;
+}
+
+.nav-subtitle i {
+    float: right;
+    font-size: 0.7rem;
+}
+
+/* 二级下拉容器 */
+.nav-subdropdown-content {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    min-width: 130px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    z-index: 1000;
+}
+
+/* 二级下拉菜单项 */
+.nav-subdropdown-content a {
+    display: block;
+    padding: 10px 15px;
+    color: #2c3e50;
+    text-decoration: none;
+    text-align: center;
+    transition: background 0.3s, color 0.3s;
+}
+
+.nav-subdropdown-content a:hover {
+    background: linear-gradient(45deg, #FF6B6B, #4ECDC4);
+    color: #fff;
+}
+
+/* 桌面端悬停显示 */
+@media screen and (min-width: 769px) {
+    .nav-item:hover .nav-dropdown-content {
+        display: block;
+    }
+    .nav-subitem:hover .nav-subdropdown-content {
+        display: block;
+    }
+}
+
+/* 移动端点击展开（需 JS 配合切换 .active） */
+@media screen and (max-width: 768px) {
+    .nav-dropdown-content,
+    .nav-subdropdown-content {
+        position: static;
+        box-shadow: none;
+        border-radius: 0;
+    }
+    .nav-dropdown-content.active,
+    .nav-subdropdown-content.active {
+        display: block;
+    }
+}
+
+
+
+
+/* Terms 页面单栏文本 */
+.terms-text {
+    width: 100%;
+    max-width: 900px; /* 可根据需求调整 */
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    line-height: 1.7;
+}
+/* 仅针对 terms-text 下的列表项 */
+.terms-text ul {
+    list-style-type: disc; /* 保留圆点，也可以用 decimal 变成数字 */
+    padding-left: 2rem;    /* 控制缩进宽度 */
+    margin-bottom: 1rem;   /* 列表间距，可选 */
+}
+
+.terms-text li {
+    margin-bottom: 0.5rem; /* 每个 li 的间距 */
+}

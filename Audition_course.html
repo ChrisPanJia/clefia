@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clefia HSC Music Preparation Program</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f0f4f8;
+        }
+
+    
+        main.container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            text-align: center;
+            color: rgb(52, 152, 219);
+        }
+
+        .course-description h1 {
+            font-size: 2.5rem;
+            color: rgb(8, 29, 125);
+            text-align: center;
+            margin-bottom: 0.5rem;
+        }
+
+        .course-description h3 {
+            font-size: 1.5rem;
+            color: rgb(78, 146, 205);
+            text-align: center;
+            margin-bottom: 1.5rem;
+            font-weight: 500;
+            font-style: italic;
+        }
+
+        .course-description p,
+        .course-description li {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #333;
+        }
+
+        .course-description,
+        .program-streams,
+        .why-choose,
+        .support-pathways {
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+            box-shadow: 0 1px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .program-module {
+            margin-bottom: 1.5rem;
+        }
+
+        .program-module h3 {
+            color: rgb(95, 136, 198);
+            margin-bottom: 0.5rem;
+            text-align: left;
+        }
+
+        .program-module ul {
+            list-style: none;
+            padding-left: 1rem;
+        }
+
+        .program-module ul li {
+            margin-bottom: 0.5rem;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        .program-module ul li::before {
+            content: "\f00c";
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            color: rgb(52, 152, 219);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid #ddd;
+        }
+
+        th,
+        td {
+            padding: 0.75rem;
+            text-align: left;
+        }
+
+        th {
+            background-color: rgb(78, 205, 196);
+            color: #fff;
+        }
+
+        .institutions-list>li {
+            font-weight: bold;
+            color: #1e3a8a;
+            /* 深蓝色，可以换成 #007BFF 之类的亮蓝 */
+            margin-bottom: 10px;
+            /* 给每个国家和下方院校留点间距 */
+        }
+
+        .institutions-list>li>ul {
+            margin-top: 5px;
+            margin-left: 20px;
+            /* 缩进子院校列表 */
+            font-weight: normal;
+            color: #333;
+            /* 子列表用正常颜色 */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar container">
+            <div class="logo">
+                <h1>Clefia Academy of Music</h1>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                
+                <!-- Courses 下拉菜单 -->
+                <div class="nav-item">
+                    <a href="courses.html" class="nav-dropbtn">Courses <i class="fas fa-caret-down"></i></a>
+                    <div class="nav-dropdown-content">
+                        <!-- Private 分类 -->
+                        <div class="nav-subitem">
+                            <span class="nav-subtitle">Private <i class=""></i></span>
+                            <div class="nav-subdropdown-content">
+                                <a href="OnetoOne_course.html">1 on 1</a>
+                                <a href="HSC_course.html">HSC</a>
+                                <a href="Audition_course.html">Audition</a>
+                            </div>
+                        </div>
+                        <!-- Group 分类 -->
+                        <div class="nav-subitem">
+                            <span class="nav-subtitle">Group <i class=""></i></span>
+                            <div class="nav-subdropdown-content">
+                                <a href="AMEB_course.html">AMEB</a>
+                                <a href="Hoppi_course.html">MINI HOPPI</a>
+                                <a href="Hoppipolla_course.html">HOPPIPOLLA</a>
+                                <a href="Contemporary_course.html">COMTEMPORARY</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="teachers.html">Teachers</a>
+                <a href="rental.html">Rental</a>
+                <a href="terms.html">Terms</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Courses Hero Section -->
+    <section class="courses-hero">
+        <div class="courses-hero-content">
+            <h1>1-on-1 Private Lessons</h1>
+        </div>
+    </section>
+
+    <main class="container">
+
+        <!-- Course Description -->
+        <section class="course-description">
+            <h1>Global Audition Support Program</h1>
+            <h3>Individually Tailored. Globally Recognised. Exceptionally Delivered.</h3>
+            <p>Your Pathway to the World’s Leading Music Institutions</p>
+            <p>At Clefia Academy of Music, we don’t just prepare students for auditions — we prepare them for global
+                stages.</p>
+            <p>Whether you dream of Juilliard, Royal College of Music, Paris Conservatoire, or Sydney Con, our Global
+                Audition Support Program provides world-class, highly personalized, and strategically structured
+                preparation to help aspiring musicians achieve their highest artistic and academic goals.</p>
+            <p>From undergraduate and postgraduate conservatory applications, to pre-college divisions, master programs,
+                summer intensives, and even professional orchestral and operatic auditions, Clefia’s program is designed
+                for success on a global scale.</p>
+
+            <h2 class="section-title">Program Highlights</h2>
+            <div class="program-module">
+                <h3>1. Strategic Repertoire Curation</h3>
+                <p>We work with each student to develop a tailored audition repertoire that aligns with the artistic
+                    expectations and technical standards of their target institutions — balancing classical depth with
+                    personal expression.</p>
+            </div>
+            <div class="program-module">
+                <h3>2. Mock Auditions & Performance Psychology</h3>
+                <ul>
+                    <li>Stage presence & anxiety management</li>
+                    <li>Timing, transitions & program flow</li>
+                    <li>Jury psychology: how to stand out in 10 minutes</li>
+                </ul>
+            </div>
+            <div class="program-module">
+                <h3>3. Audition Video Portfolio Production</h3>
+                <p>From video framing and lighting to musical takes and attire — we ensure your recorded audition is
+                    polished, compelling, and competitive.</p>
+            </div>
+            <div class="program-module">
+                <h3>4. Application & Interview Mentorship</h3>
+                <ul>
+                    <li>Personal statement writing & music CVs</li>
+                    <li>Recommendation letter strategies</li>
+                    <li>Scholarship applications</li>
+                    <li>Audition interview coaching (Zoom/in-person)</li>
+                </ul>
+            </div>
+            <div class="program-module">
+                <h3>5. Music Theory & Aural Intensive (Optional)</h3>
+                <p>Targeted support for entrance theory and musicianship tests required by top institutions like RCM,
+                    Juilliard, Mozarteum, etc.</p>
+            </div>
+
+            <h2 class="section-title">Why Choose Clefia?</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Feature</th>
+                        <th>Clefia Distinction</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Global Mentor Team</td>
+                        <td>Trained at and connected to top conservatories worldwide</td>
+                    </tr>
+                    <tr>
+                        <td>Multi-Disciplinary Coaching</td>
+                        <td>Covers performance, academic requirements, mindset and visuals</td>
+                    </tr>
+                    <tr>
+                        <td>International Placement Success</td>
+                        <td>Students admitted to RCM, Sydney Con, ANAM, Guildhall, Manhattan School and more</td>
+                    </tr>
+                    <tr>
+                        <td>Video Audition Excellence</td>
+                        <td>In-house expertise in video editing, submission formatting, and jury engagement</td>
+                    </tr>
+                    <tr>
+                        <td>Professional Preparation</td>
+                        <td>Also supports professional auditions – orchestra, competitions, opera companies</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2 class="section-title">Meet Our Global Mentors</h2>
+            <div class="program-module">
+                <h3>Christian Qi – International Baritone & Mentor</h3>
+                <p>With international opera experience and a history of preparing vocalists for professional stages and
+                    conservatory programs, Christian’s mentorship bridges technical mastery with artistic individuality.
+                </p>
+            </div>
+            <div class="program-module">
+                <h3>Jack Cheng – Australia’s Only Steinway Artist</h3>
+                <p>Renowned for his expressive interpretation and virtuosic control, Jack has performed and taught
+                    worldwide. His students have gone on to top conservatories and achieved success in elite
+                    competitions and international programs.</p>
+            </div>
+            <div class="program-module">
+                <h3>Dr. Shufang Zhang – Concert Pianist & Academic</h3>
+                <p>A PhD in Music with a distinguished performance and teaching career across China, Australia, and
+                    Europe, Dr. Zhang specializes in holistic musical development for advanced students.</p>
+            </div>
+
+            <h2 class="section-title">Who This Program Is For</h2>
+            <ul>
+                <li>High school or university students preparing for music school applications in the U.S., UK, Europe,
+                    China, or Australia</li>
+                <li>Vocalists, instrumentalists, composers, or conductors seeking professional or pre-professional
+                    placement</li>
+                <li>Students submitting video-based auditions</li>
+                <li>Young musicians seeking elite summer school or festival acceptance</li>
+                <li>Parents seeking expert guidance in navigating the global music education landscape</li>
+            </ul>
+
+            <h2 class="section-title">Institutions We Help Prepare For</h2>
+            <ul class="institutions-list">
+                <li>🇺🇸 United States
+                    <ul>
+                        <li>Juilliard School</li>
+                        <li>Manhattan School of Music</li>
+                        <li>New England Conservatory</li>
+                        <li>USC Thornton School of Music</li>
+                    </ul>
+                </li>
+                <li>🇬🇧 United Kingdom
+                    <ul>
+                        <li>Royal College of Music</li>
+                        <li>Royal Academy of Music</li>
+                        <li>Guildhall School of Music & Drama</li>
+                        <li>Chetham’s School of Music (Pre-college)</li>
+                    </ul>
+                </li>
+                <li>🇪🇺 Europe
+                    <ul>
+                        <li>Mozarteum Salzburg</li>
+                        <li>Hochschule für Musik Hanns Eisler Berlin</li>
+                        <li>Conservatoire de Paris</li>
+                        <li>Sibelius Academy (Finland)</li>
+                    </ul>
+                </li>
+                <li>🇦🇺 Australia
+                    <ul>
+                        <li>Sydney Conservatorium of Music</li>
+                        <li>ANAM (Australian National Academy of Music)</li>
+                        <li>Melbourne & Queensland Conservatories</li>
+                    </ul>
+                </li>
+                <li>🇨🇳 Asia
+                    <ul>
+                        <li>Central Conservatory of Music (Beijing)</li>
+                        <li>Shanghai Conservatory of Music</li>
+                        <li>Hong Kong Academy for Performing Arts</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h2 class="section-title">What Students & Parents Say</h2>
+            <p>“Clefia’s audition program was a game-changer. The feedback was sharp, honest, and deeply musical. I got
+                into my dream school in London.”<br>
+                — Jason T., RCM offer holder (2024)
+            </p>
+            <p>“The audition video coaching helped my son present the best version of himself. It made all the
+                difference.”<br>
+                — Parent of student accepted to Sydney Con (2023)
+            </p>
+
+            <h2 class="section-title">Start Your Global Journey</h2>
+            <p>Whether you’re preparing for your first audition or stepping into the world stage, Clefia’s Global
+                Audition Support Program equips you with the artistry, strategy, and confidence to succeed — wherever
+                music takes you.</p>
+            <p>Limited intake per term. Enquire now to reserve your audition consultation.</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Harmony Music Academy</h3>
+                <p>Your journey to musical excellence starts here</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: info@clefia.com.au</p>
+                <p>Phone: 0449 810 086/ 0488 899 668</p>
+                <p>Address: uite 601, North Tower, 1-5 Railway St, Chatswood, NSW, 2067</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Harmony Music Academy. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

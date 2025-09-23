@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rental Prices - Clefia Academy of Music</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        /* Rental Table Styles */
+        .rental-table {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            border-collapse: collapse;
+            margin-bottom: 2rem;
+        }
+
+        .rental-table th,
+        .rental-table td {
+            border: 1px solid #ddd;
+            padding: 0.8rem 1rem;
+            text-align: left;
+        }
+
+        .rental-table th {
+            background-color: #f4f4f4;
+            font-weight: 600;
+        }
+
+        .rental-table tr:nth-child(even) {
+            background-color: #fafafa;
+        }
+
+        .rental-text {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+            line-height: 1.7;
+        }
+
+        .rental-text ul {
+            padding-left: 2rem;
+            margin-top: 1rem;
+        }
+
+        .rental-text li {
+            margin-bottom: 0.5rem;
+        }
+
+        .rental-table th:nth-child(3),
+        .rental-table td:nth-child(3) {
+            width: 150px;
+            /* 或者 120px~180px，根据需要调整 */
+            text-align: center;
+            /* 可选，价格居中 */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Clefia Academy of Music</h1>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+
+                <div class="nav-item">
+                    <a href="courses.html" class="nav-dropbtn">Courses <i class="fas fa-caret-down"></i></a>
+                    <div class="nav-dropdown-content">
+                        <a href="HSC_course.html">HSC</a>
+                        <a href="Audition_course.html">Audition</a>
+                        <a href="Hoppi_course.html">Hoppi</a>
+                        <a href="Hoppipolla_course.html">Hoppipolla</a>
+                        <a href="AMEB_course.html">AMEB</a>
+                        <a href="Contemporary_course.html">Contemporary</a>
+                    </div>
+                </div>
+
+                <a href="teachers.html">Teachers</a>
+                <a href="rental.html" class="active">Rental</a>
+                <a href="terms.html">Terms</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Rental Hero Section -->
+    <section class="about-hero">
+        <div class="about-hero-content">
+            <h1>Room Rental Prices</h1>
+            <p>Flexible rehearsal and recording spaces for your musical needs</p>
+        </div>
+    </section>
+
+    <!-- Rental Content Section -->
+    <section class="about-content">
+        <div class="rental-text">
+            <table class="rental-table">
+                <thead>
+                    <tr>
+                        <th>Room</th>
+                        <th>Details / Capacity</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Downstairs Rehearsal Room</td>
+                        <td>Up to 15 people</td>
+                        <td>$100 / hour</td>
+                    </tr>
+                    <tr>
+                        <td>Kawai Double Grand Piano Room</td>
+                        <td>Double Grand Pianos, Upstairs</td>
+                        <td>$90 / hour</td>
+                    </tr>
+                    <tr>
+                        <td>Kawai Grand Piano Room</td>
+                        <td>Single Grand, suitable for solo instrumental recording</td>
+                        <td>$80 / hour</td>
+                    </tr>
+                    <tr>
+                        <td>Yamaha Upright Piano Room</td>
+                        <td>-</td>
+                        <td>$50 / hour</td>
+                    </tr>
+                    <tr>
+                        <td>Yamaha Small Recording Room</td>
+                        <td>-</td>
+                        <td>$40 / hour</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p>To book a room, simply send us an email or message.</p>
+
+            <h3>Additional Information:</h3>
+            <ul>
+                <li>Bookings are subject to availability.</li>
+                <li>Advance booking is recommended.</li>
+                <li>Minimum booking: 1 hour.</li>
+                <li>Payment is required at the time of booking.</li>
+                <li>Cancellations made less than 24 hours in advance may still be charged.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Harmony Music Academy</h3>
+                <p>Your journey to musical excellence starts here</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: info@clefia.com.au</p>
+                <p>Phone: 0449 810 086/ 0488 899 668</p>
+                <p>Address: uite 601, North Tower, 1-5 Railway St, Chatswood, NSW, 2067</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Harmony Music Academy. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

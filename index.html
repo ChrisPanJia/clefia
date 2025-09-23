@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clefia Academy of Music</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Clefia Academy of Music</h1>
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="active">Home</a>
+                <a href="about.html">About</a>
+
+
+                <!-- Courses 下拉菜单 -->
+                <div class="nav-item">
+                    <a href="courses.html" class="nav-dropbtn">Courses <i class="fas fa-caret-down"></i></a>
+                    <div class="nav-dropdown-content">
+                        <!-- Private 分类 -->
+                        <div class="nav-subitem">
+                            <span class="nav-subtitle">Private <i class=""></i></span>
+                            <div class="nav-subdropdown-content">
+                                <a href="OnetoOne_course.html">1 on 1</a>
+                                <a href="HSC_course.html">HSC</a>
+                                <a href="Audition_course.html">Audition</a>
+                            </div>
+                        </div>
+                        <!-- Group 分类 -->
+                        <div class="nav-subitem">
+                            <span class="nav-subtitle">Group <i class=""></i></span>
+                            <div class="nav-subdropdown-content">
+                                <a href="AMEB_course.html">AMEB</a>
+                                <a href="Hoppi_course.html">MINI HOPPI</a>
+                                <a href="Hoppipolla_course.html">HOPPIPOLLA</a>
+                                <a href="Contemporary_course.html">COMTEMPORARY</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <a href="teachers.html">Teachers</a>
+                <a href="rental.html">Rental</a>
+                <a href="terms.html">Terms</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <!-- 背景视频层 -->
+        <video autoplay muted loop playsinline class="hero-video">
+            <source src="images/hero_vidoe.mp4" type="video/mp4">
+            您的浏览器不支持 HTML5 视频。
+        </video>
+
+        <!-- 遮罩层（让文字更清晰） -->
+        <div class="hero-overlay"></div>
+
+        <!-- 内容层 -->
+        <div class="hero-content">
+            <h1>Discover Your Musical Journey</h1>
+            <p>Learn from the best musicians and unlock your potential</p>
+            <a href="courses.html" class="cta-button">Explore Courses</a>
+        </div>
+    </section>
+
+
+
+    <!-- Featured Courses Section -->
+    <section class="featured-courses">
+        <h2>Popular Courses</h2>
+        <div class="courses-grid">
+            <div class="course-card">
+                <img src="images/piano.jpg" alt="Piano Lessons">
+                <h3>Clefia HSC Music Preparation Program</h3>
+                <p>Master the syllabus. Find your voice. Excel with confidence.</p>
+                <a href="HSC_course.html" class="learn-more">Learn More</a>
+            </div>
+            <div class="course-card">
+                <img src="images/guitar.jpg" alt="Guitar Lessons">
+                <h3>Global Audition Support Program</h3>
+                <p>Individually Tailored. Globally Recognised. Exceptionally Delivered.</p>
+                <a href="Audition_course.html" class="learn-more">Learn More</a>
+            </div>
+            <div class="course-card">
+                <img src="images/violin.jpg" alt="Violin Lessons">
+                <h3>Clefia Contemporary Music Program</h3>
+                <p>Create. Perform. Produce. Your Sound Starts Here.</p>
+                <a href="Contemporary_course.html" class="learn-more">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-us">
+        <h2>Why Choose Us</h2>
+        <div class="features-grid">
+            <div class="feature">
+                <i class="fas fa-user-graduate"></i>
+                <h3>Expert Faculties</h3>
+                <p>
+                    Our faculty are not only skilled educators — they are stage-tested artists. From the Sydney Opera
+                    House to global Steinway stages, our teachers bring real-world experience, mentorship, and artistic
+                    integrity to every lesson
+                </p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-music"></i>
+                <h3>Flexible Learning Models</h3>
+                <p>
+                    We understand that every musical journey is different. That’s why we offer personalised private
+                    lessons, vibrant group classes, and holiday intensives that adapt to your schedule, age, and goals
+                </p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-certificate"></i>
+                <h3>Certified & Recognised Pathways</h3>
+                <p>
+                    Our programs are aligned with AMEB and global standards, offering students a clear, progressive
+                    structure that leads to real achievements, recognised qualifications, and future opportunities
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Harmony Music Academy</h3>
+                <p>Your journey to musical excellence starts here</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: info@clefia.com.au</p>
+                <p>Phone: 0449 810 086/ 0488 899 668</p>
+                <p>Address: uite 601, North Tower, 1-5 Railway St, Chatswood, NSW, 2067</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Harmony Music Academy. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

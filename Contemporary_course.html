@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clefia HSC Music Preparation Program</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f0f4f8;
+        }
+
+
+
+        main.container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            text-align: center;
+            color: rgb(52, 152, 219);
+        }
+
+        .course-description h1 {
+            font-size: 2.5rem;
+            color: rgb(8, 29, 125);
+            text-align: center;
+            margin-bottom: 0.5rem;
+        }
+
+        .course-description h3 {
+            font-size: 1.5rem;
+            color: rgb(78, 146, 205);
+            text-align: center;
+            margin-bottom: 1.5rem;
+            font-weight: 500;
+            font-style: italic;
+        }
+
+        .course-description p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            text-align: center;
+            color: #333;
+        }
+
+        .course-description,
+        .program-streams,
+        .why-choose,
+        .support-pathways {
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+            box-shadow: 0 1px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .program-module {
+            margin-bottom: 1.5rem;
+        }
+
+        .program-module h3 {
+            color: rgb(78, 205, 196);
+            margin-bottom: 0.5rem;
+        }
+
+        .program-module ul {
+            list-style: none;
+            padding-left: 1rem;
+        }
+
+        .program-module ul li {
+            margin-bottom: 0.5rem;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        .program-module ul li::before {
+            content: "\f00c";
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            color: rgb(52, 152, 219);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid #ddd;
+        }
+
+        th,
+        td {
+            padding: 0.75rem;
+            text-align: left;
+        }
+
+        th {
+            background-color: rgb(78, 205, 196);
+            color: #fff;
+        }
+
+
+        /* 默认课程亮点 ✓ */
+        .program-module ul li::before {
+            content: "✓";
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            color: rgb(52, 152, 219);
+        }
+
+        /* Pathways 使用箭头 → */
+        .program-module.pathways ul li::before {
+            content: "→";
+            font-family: inherit;
+            font-weight: normal;
+            color: rgb(78, 146, 205);
+        }
+
+        /* Why 使用星号 ★ */
+        .program-module.why ul li::before {
+            content: "★";
+            font-family: inherit;
+            font-weight: normal;
+            color: rgb(255, 165, 0);
+        }
+
+        /* Who 使用小圆点 • */
+        .program-module.who ul li::before {
+            content: "•";
+            font-family: inherit;
+            font-weight: normal;
+            color: rgb(52, 152, 219);
+        }
+
+        /* 调整列表位置 */
+        .program-module ul {
+            list-style: none;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .program-module ul li {
+            margin-bottom: 0.5rem;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar container">
+            <div class="logo">
+                <h1>Clefia Academy of Music</h1>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                
+                <!-- Courses 下拉菜单 -->
+                <div class="nav-item">
+                    <a href="courses.html" class="nav-dropbtn">Courses <i class="fas fa-caret-down"></i></a>
+                    <div class="nav-dropdown-content">
+                        <!-- Private 分类 -->
+                        <div class="nav-subitem">
+                            <span class="nav-subtitle">Private <i class=""></i></span>
+                            <div class="nav-subdropdown-content">
+                                <a href="OnetoOne_course.html">1 on 1</a>
+                                <a href="HSC_course.html">HSC</a>
+                                <a href="Audition_course.html">Audition</a>
+                            </div>
+                        </div>
+                        <!-- Group 分类 -->
+                        <div class="nav-subitem">
+                            <span class="nav-subtitle">Group <i class=""></i></span>
+                            <div class="nav-subdropdown-content">
+                                <a href="AMEB_course.html">AMEB</a>
+                                <a href="Hoppi_course.html">MINI HOPPI</a>
+                                <a href="Hoppipolla_course.html">HOPPIPOLLA</a>
+                                <a href="Contemporary_course.html">COMTEMPORARY</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <a href="teachers.html">Teachers</a>
+                <a href="rental.html">Rental</a>
+                <a href="terms.html">Terms</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- Courses Hero Section -->
+    <section class="courses-hero">
+        <div class="courses-hero-content">
+            <h1>Group Classes</h1>
+            <h2></h2>
+            <p>
+            </p>
+        </div>
+    </section>
+    <main class="container">
+        <!-- Course Description -->
+        <!-- Course Description -->
+        <section class="course-description">
+            <h1>Clefia Contemporary Music Program</h1>
+            <h3>Create. Perform. Produce. Your Sound Starts Here.</h3>
+            <p>
+                The Clefia Contemporary Music Program is not just a set of classes — it’s a launchpad for the next
+                generation of music creators. Designed for students aged 10+, this program blends performance,
+                songwriting, composition, and digital music production into a comprehensive creative journey.
+            </p>
+            <p>
+                Whether your child dreams of becoming a singer-songwriter, film composer, pop artist, producer,
+                or simply wants to express themselves through music, Clefia offers the tools, mentorship, and
+                performance experiences to bring those dreams to life.
+            </p>
+        </section>
+
+        <!-- Program Streams -->
+        <section class="program-streams">
+            <h2 class="section-title">What Students Learn</h2>
+
+            <div class="program-module">
+                <h3>Pop & Contemporary Vocal Performance</h3>
+                <ul>
+                    <li>Learn safe, expressive vocal technique for pop, R&B, musical theatre & crossover genres</li>
+                    <li>Develop microphone technique, stage presence, and interpretation</li>
+                    <li>Master modern vocal styles: riffing, vocal textures, storytelling through voice</li>
+                    <li>Explore harmony singing & ensemble performance</li>
+                </ul>
+            </div>
+
+            <div class="program-module">
+                <h3>Instrumental Performance (Pop Piano, Guitar, Bass, Drums)</h3>
+                <ul>
+                    <li>Learn to read chord charts, lead sheets, and groove in real-world settings</li>
+                    <li>Accompany singers, lead a band, improvise within a style</li>
+                    <li>Study rhythm, phrasing, and genre-specific articulation</li>
+                    <li>Build musicianship through ensemble rehearsal and live gigs</li>
+                </ul>
+            </div>
+
+            <div class="program-module">
+                <h3>Songwriting & Lyric Craft</h3>
+                <ul>
+                    <li>Compose original melodies and write meaningful lyrics</li>
+                    <li>Understand form, hooks, rhyme, and emotional structure</li>
+                    <li>Analyse songs by famous artists and create in your own voice</li>
+                    <li>Build a personal songwriting portfolio</li>
+                </ul>
+            </div>
+
+            <div class="program-module">
+                <h3>Music Production & Technology</h3>
+                <ul>
+                    <li>Learn how music is made in today’s digital world</li>
+                    <li>Use professional tools like Logic Pro X, GarageBand, or Ableton Live</li>
+                    <li>Create beats, layer instruments, record vocals, and shape sound</li>
+                    <li>Learn audio mixing, effects, sampling, and creative sound design</li>
+                    <li>Bring a song from rough idea to produced demo</li>
+                </ul>
+            </div>
+
+            <div class="program-module">
+                <h3>Composition for Visual Media (Intermediate–Advanced)</h3>
+                <ul>
+                    <li>Learn to compose music for short films, dance, games, and visual storytelling</li>
+                    <li>Understand emotional scoring, atmosphere, and transitions</li>
+                    <li>Sync audio to picture and create cinematic soundscapes</li>
+                    <li>Ideal for students interested in future careers in film/game music</li>
+                </ul>
+            </div>
+
+            <div class="program-module">
+                <h3>Band Coaching & Live Ensemble</h3>
+                <ul>
+                    <li>Work collaboratively in bands or small groups</li>
+                    <li>Arrange popular songs or originals</li>
+                    <li>Practice rehearsal strategies, live set design, and audience communication</li>
+                    <li>Regular performances at Clefia concerts, showcases, and pop-up events</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Support & Pathways -->
+        <section class="support-pathways">
+
+            <h2 class="section-title">Pathways & Achievements</h2>
+            <div class="program-module pathways">
+                <ul>
+                    <li>AMEB Rockschool Exams – structured achievement in voice, keys, drums, guitar, composition</li>
+                    <li>Performance opportunities – school festivals, showcases, original song premieres</li>
+                    <li>Music Portfolio development – ideal for HSC Music Extension, arts high school entry, or
+                        scholarships</li>
+                    <li>Original songs recorded & performed — with support from Clefia’s in-house producers & engineers
+                    </li>
+                    <li>Entry into cross-disciplinary programs — collaborate with Clefia’s drama, musical theatre, or
+                        classical divisions</li>
+                </ul>
+            </div>
+
+            <h2 class="section-title">Why Clefia’s Program Stands Out</h2>
+            <div class="program-module why">
+                <ul>
+                    <li>Designed by working professionals in performance, songwriting & production</li>
+                    <li>Multilingual instruction available</li>
+                    <li>Integrated with technology — students learn both traditional skills and modern tools</li>
+                    <li>Creativity-first philosophy — every child’s voice, taste, and identity are respected</li>
+                    <li>Flexible levels — whether you’re starting out or preparing to release original work</li>
+                </ul>
+            </div>
+
+            <h2 class="section-title">Who Is This For?</h2>
+            <div class="program-module who">
+                <ul>
+                    <li>Children & teens aged 9+ who love modern music and want to go beyond lessons</li>
+                    <li>Classical students wanting to branch into songwriting, pop, or production</li>
+                    <li>Creatives who write songs, produce beats, or want to learn how</li>
+                    <li>HSC Music students, AMEB Rockschool candidates, or music scholarship applicants</li>
+                    <li>Any young person who wants to explore, create, and grow in a safe, exciting, and professional
+                        environment</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="why-choose">
+            <p style="text-align:center; font-style:italic;">
+                “At Clefia, we don’t just teach you to play — we help you find your voice, write your sound, and bring
+                it to life.”
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Harmony Music Academy</h3>
+                <p>Your journey to musical excellence starts here</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: info@clefia.com.au</p>
+                <p>Phone: 0449 810 086/ 0488 899 668</p>
+                <p>Address: uite 601, North Tower, 1-5 Railway St, Chatswood, NSW, 2067</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Harmony Music Academy. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
