@@ -169,6 +169,38 @@
     </footer>
 
     <script src="js/main.js"></script>
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        });
+
+        // 移动端点击展开一级和二级下拉
+        document.querySelectorAll('.nav-dropbtn, .nav-subtitle').forEach(item => {
+            item.addEventListener('click', (e) => {
+                e.preventDefault(); // 防止 a 标签直接跳转
+                e.stopPropagation();
+
+                const nextMenu = item.nextElementSibling;
+                if (nextMenu && (nextMenu.classList.contains('nav-dropdown-content') || nextMenu.classList.contains('nav-subdropdown-content'))) {
+                    nextMenu.classList.toggle('active');
+                }
+            });
+        });
+
+        // 点击空白处关闭下拉
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('.nav-item')) {
+                document.querySelectorAll('.nav-dropdown-content, .nav-subdropdown-content').forEach(menu => {
+                    menu.classList.remove('active');
+                });
+            }
+        });
+
+    </script>
 </body>
 
 </html>
