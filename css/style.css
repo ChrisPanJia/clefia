@@ -14,7 +14,7 @@ body {
 /* Header and Navigation */
 header {
     background-color: rgba(255, 255, 255, 0.95);
-    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
     position: fixed;
     width: 100%;
     top: 0;
@@ -84,9 +84,10 @@ header {
 
 /* Hero Section */
 .hero {
-    position: relative; /* 确保子元素绝对定位基于它 */
+    position: relative;
+    /* 确保子元素绝对定位基于它 */
     height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/hero-bg.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/hero-bg.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -95,7 +96,8 @@ header {
     text-align: center;
     color: #fff;
     padding: 0 1rem;
-    overflow: hidden; /* 防止视频溢出 */
+    overflow: hidden;
+    /* 防止视频溢出 */
 }
 
 .hero-video {
@@ -117,26 +119,28 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.4); /* 半透明遮罩 */
+    background: rgba(0, 0, 0, 0.4);
+    /* 半透明遮罩 */
     z-index: 1;
 }
 
 .hero-content {
     position: relative;
-    z-index: 2; /* 确保文字在视频和遮罩上方 */
+    z-index: 2;
+    /* 确保文字在视频和遮罩上方 */
 }
 
 
 .hero-content h1 {
     font-size: 3.5rem;
     margin-bottom: 1rem;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .hero-content p {
     font-size: 1.2rem;
     margin-bottom: 2rem;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 .cta-button {
@@ -147,12 +151,12 @@ header {
     text-decoration: none;
     border-radius: 30px;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .cta-button:hover {
     transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
 
 /* Featured Courses Section */
@@ -192,13 +196,13 @@ header {
     background: #fff;
     border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
 }
 
 .course-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
 .course-card img {
@@ -279,13 +283,13 @@ header {
     padding: 2rem;
     background: #fff;
     border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
 }
 
 .feature:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
 .feature i {
@@ -344,7 +348,7 @@ footer {
     text-align: center;
     margin-top: 2rem;
     padding-top: 2rem;
-    border-top: 1px solid rgba(255,255,255,0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 /* Responsive Design */
@@ -384,7 +388,7 @@ footer {
     right: 0;
     background: #fff;
     padding: 1rem;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .nav-links.active a {
@@ -394,7 +398,7 @@ footer {
 /* About Page Styles */
 .about-hero {
     height: 60vh;
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../images/about-hero.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/about-hero.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -454,7 +458,7 @@ footer {
     padding: 2rem;
     background: #fff;
     border-radius: 10px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
 
@@ -551,7 +555,7 @@ footer {
 /* Courses Page Styles */
 .courses-hero {
     height: 60vh;
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../images/courses-hero.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/courses-hero.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -622,12 +626,13 @@ footer {
     background: #fff;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
     opacity: 0;
     transform: translateY(20px);
     display: flex;
-    flex-direction: column;  /* 竖直排列 */
+    flex-direction: column;
+    /* 竖直排列 */
 }
 
 .course-card.animate {
@@ -649,7 +654,8 @@ footer {
     padding: 1.5rem;
     display: flex;
     flex-direction: column;
-    flex-grow: 1;           /* 占满卡片剩余空间 */
+    flex-grow: 1;
+    /* 占满卡片剩余空间 */
 }
 
 .course-content h3 {
@@ -668,7 +674,8 @@ footer {
     margin-bottom: 1rem;
     color: #666;
     font-size: 0.66rem;
-     margin-top: auto;      /* 推到底部 */
+    margin-top: auto;
+    /* 推到底部 */
 }
 
 .course-details span {
@@ -685,8 +692,10 @@ footer {
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
-    width: 130px;          /* 不要100%，保持原始宽度 */
-    margin-top: 1rem;      /* 和 details 保持间距 */
+    width: 130px;
+    /* 不要100%，保持原始宽度 */
+    margin-top: 1rem;
+    /* 和 details 保持间距 */
 }
 
 .enroll-btn:hover {
@@ -737,7 +746,7 @@ footer {
 /* Teachers Page Styles */
 .teachers-hero {
     height: 60vh;
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../images/teachers-hero.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/teachers-hero.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -774,15 +783,18 @@ footer {
     background: #fff;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
     opacity: 0;
     transform: translateY(20px);
 
-    width: 380px;          /* 根据需要调整大小 */
-    min-width: 380px;      /* 防止缩小 */
-    max-width: 380px;      /* 防止放大 */
-    margin: 0 auto;        
+    width: 380px;
+    /* 根据需要调整大小 */
+    min-width: 380px;
+    /* 防止缩小 */
+    max-width: 380px;
+    /* 防止放大 */
+    margin: 0 auto;
 }
 
 .teacher-card.animate {
@@ -915,7 +927,7 @@ footer {
     .qualities-grid {
         grid-template-columns: 1fr;
     }
-} 
+}
 
 
 
@@ -951,7 +963,7 @@ footer {
     min-width: 130px;
     background: #fff;
     border-radius: 5px;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
     z-index: 1000;
 }
 
@@ -998,7 +1010,7 @@ footer {
     min-width: 130px;
     background: #fff;
     border-radius: 5px;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
     z-index: 1000;
 }
 
@@ -1022,6 +1034,7 @@ footer {
     .nav-item:hover .nav-dropdown-content {
         display: block;
     }
+
     .nav-subitem:hover .nav-subdropdown-content {
         display: block;
     }
@@ -1042,14 +1055,16 @@ footer {
 
     /* 二级菜单（Private / Group） */
     .nav-subitem {
-        padding-left: 5rem; /* 适中缩进 */
+        padding-left: 5rem;
+        /* 适中缩进 */
         margin-top: 0.3rem;
-        border-left: 2px solid #ddd; /* 可选竖线分层 */
+        border-left: 2px solid #ddd;
+        /* 可选竖线分层 */
     }
 
     /* 二级标题箭头 */
     .nav-subtitle::before {
-        content: "▶"; 
+        content: "▶";
         display: inline-block;
         margin-right: 0.5rem;
         font-size: 0.9rem;
@@ -1061,33 +1076,51 @@ footer {
     .nav-subdropdown-content {
         display: block;
         position: static;
-        padding-left: 7rem; /* 适中缩进 */
+        padding-left: 7rem;
+        /* 适中缩进 */
         margin-top: 0.2rem;
     }
 
     .nav-subdropdown-content a {
-        padding-left: 1.5rem; /* 内部链接再缩进 */
+        padding-left: 1.5rem;
+        /* 内部链接再缩进 */
     }
 }
 
+@media screen and (max-width: 768px) {
+    .nav-links {
+        max-height: 80vh;
+        /* 最大占屏幕 80% 高度 */
+        overflow-y: auto;
+        /* 超出滚动 */
+        padding-right: 0.5rem;
+        /* 滚动条空间 */
+    }
+}
 
 
 
 /* Terms 页面单栏文本 */
 .terms-text {
     width: 100%;
-    max-width: 900px; /* 可根据需求调整 */
+    max-width: 900px;
+    /* 可根据需求调整 */
     margin: 0 auto;
     padding: 2rem 1rem;
     line-height: 1.7;
 }
+
 /* 仅针对 terms-text 下的列表项 */
 .terms-text ul {
-    list-style-type: disc; /* 保留圆点，也可以用 decimal 变成数字 */
-    padding-left: 2rem;    /* 控制缩进宽度 */
-    margin-bottom: 1rem;   /* 列表间距，可选 */
+    list-style-type: disc;
+    /* 保留圆点，也可以用 decimal 变成数字 */
+    padding-left: 2rem;
+    /* 控制缩进宽度 */
+    margin-bottom: 1rem;
+    /* 列表间距，可选 */
 }
 
 .terms-text li {
-    margin-bottom: 0.5rem; /* 每个 li 的间距 */
+    margin-bottom: 0.5rem;
+    /* 每个 li 的间距 */
 }

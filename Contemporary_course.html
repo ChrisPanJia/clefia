@@ -170,14 +170,15 @@
 
 <body>
     <header>
-        <nav class="navbar container">
+        <nav class="navbar">
             <div class="logo">
                 <h1>Clefia Academy of Music</h1>
             </div>
             <div class="nav-links">
-                <a href="index.html">Home</a>
+                <a href="index.html" class="active">Home</a>
                 <a href="about.html">About</a>
-                
+
+
                 <!-- Courses 下拉菜单 -->
                 <div class="nav-item">
                     <a href="courses.html" class="nav-dropbtn">Courses <i class="fas fa-caret-down"></i></a>
@@ -203,11 +204,17 @@
                         </div>
                     </div>
                 </div>
-                
+
+
                 <a href="teachers.html">Teachers</a>
                 <a href="rental.html">Rental</a>
                 <a href="terms.html">Terms</a>
                 <a href="contact.html">Contact</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </nav>
     </header>
@@ -382,6 +389,40 @@
             <p>&copy; 2024 Harmony Music Academy. All rights reserved.</p>
         </div>
     </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        });
+
+        // 移动端点击展开一级和二级下拉
+        document.querySelectorAll('.nav-dropbtn, .nav-subtitle').forEach(item => {
+            item.addEventListener('click', (e) => {
+                e.preventDefault(); // 防止 a 标签直接跳转
+                e.stopPropagation();
+
+                const nextMenu = item.nextElementSibling;
+                if (nextMenu && (nextMenu.classList.contains('nav-dropdown-content') || nextMenu.classList.contains('nav-subdropdown-content'))) {
+                    nextMenu.classList.toggle('active');
+                }
+            });
+        });
+
+        // 点击空白处关闭下拉
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('.nav-item')) {
+                document.querySelectorAll('.nav-dropdown-content, .nav-subdropdown-content').forEach(menu => {
+                    menu.classList.remove('active');
+                });
+            }
+        });
+
+    </script>
 </body>
 
 </html>
