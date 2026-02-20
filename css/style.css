@@ -1027,17 +1027,46 @@ footer {
     }
 }
 
-/* 移动端点击展开（需 JS 配合切换 .active） */
+/* 移动端 */
 @media screen and (max-width: 768px) {
-    .nav-dropdown-content,
-    .nav-subdropdown-content {
+
+    /* 一级下拉已展开 */
+    .nav-dropdown-content {
+        display: block;
         position: static;
         box-shadow: none;
         border-radius: 0;
+        margin-left: 0;
+        padding-left: 0;
     }
-    .nav-dropdown-content.active,
-    .nav-subdropdown-content.active {
+
+    /* 二级菜单（Private / Group） */
+    .nav-subitem {
+        padding-left: 5rem; /* 适中缩进 */
+        margin-top: 0.3rem;
+        border-left: 2px solid #ddd; /* 可选竖线分层 */
+    }
+
+    /* 二级标题箭头 */
+    .nav-subtitle::before {
+        content: "▶"; 
+        display: inline-block;
+        margin-right: 0.5rem;
+        font-size: 0.9rem;
+        transform: rotate(90deg);
+        color: #555;
+    }
+
+    /* 三级菜单（具体课程） */
+    .nav-subdropdown-content {
         display: block;
+        position: static;
+        padding-left: 7rem; /* 适中缩进 */
+        margin-top: 0.2rem;
+    }
+
+    .nav-subdropdown-content a {
+        padding-left: 1.5rem; /* 内部链接再缩进 */
     }
 }
 
